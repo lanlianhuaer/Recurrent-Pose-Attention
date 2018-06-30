@@ -1,17 +1,25 @@
 # If want to input None, use !!null
-num_seq: 8 
-num_timesteps: 8 
+num_seq: 8 #number of videos per batch
+num_timesteps: 8 #number of frames per video in one batch
+#The batch_size(of images) is num_seq*num_timesteps
 
 img_scale_x: 240 
 img_scale_y: 320 
+#size of the input image
 reg_scale_x: 8 
 reg_scale_y: 10 
+#scale of the feature maps where to apply pose attention
 
 num_joints: 13 # 
-weights_dir:  ./jhmdb_dummy/ 
+weights_dir:  ./jhmdb_model/ #where to save the trained model
 weights_dir_load_temporal_spatial: ./pretrained_model/ 
+# This model is converted from the TSN caffe model pretrained on UCF101 
+#link: https://github.com/yjxiong/temporal-segment-networks  
+#Get trained models
 
 videos_folder_spatial: ./jhmdb_img/ 
 videos_folder_temporal: ./jhmdb_flow/ 
-target_dir: ./joint_positions/ 
-jhmdb_splits: ./jhmdb_splits
+# rgb img and flow img are generated from TSN: https://github.com/yjxiong/temporal-segment-networks
+# Extract Frames and Optical Flow Images
+target_dir: ./joint_positions/ #from jhmdb dataset
+jhmdb_splits: ./jhmdb_splits #from jhmdb dataset
