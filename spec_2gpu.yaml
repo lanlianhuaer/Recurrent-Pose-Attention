@@ -9,10 +9,10 @@ reg_scale_y: 10 #25
 
 num_joints: 13 #9 #without torso ,and avg up and lower head
 weights_dir:  /media/SSD/wbdu/ijcv_multi_task/jhmdb_dummy_joint_publish_test/  #/media/data/wbdu/data/iccv17_pose/jhmdb/lstm_inception_sepW_sep13_split1_5parts_load_right_lit_1_gamma1_to_del_test/ # directory for saving weights and results
-weights_dir_load_temporal_spatial: /media/data/wbdu/data/test1/lstm_init_no_lstm/ #/media/SSD2/wbdu/data/TSN_models/lstm_init_no_lstm/ #/media/data/wbdu/data/test1/lstm_init_no_lstm/ #/home/wbdu/data/models_limin_vgg_spatial_temporal/lstm_init/
+weights_dir_load_temporal_spatial: /media/SSD/wbdu/ijcv_multi_task/jhmdb_dummy_joint_publish_test/ #/media/data/wbdu/data/test1/lstm_init_no_lstm/ #/media/SSD2/wbdu/data/TSN_models/lstm_init_no_lstm/ #/media/data/wbdu/data/test1/lstm_init_no_lstm/ #/home/wbdu/data/models_limin_vgg_spatial_temporal/lstm_init/
 
 videos_folder_spatial: /home/wbdu/Tutorials/good_practice_lstm/temporal-segment-networks/data/jhmdb_img/ #/media/SSD/wbdu/data/Penn_Action/Penn_Action_rgb/ #/media/SSD/wbdu/data/MPII_cooking/mpii-cooking-rgb/train/ #/media/SSD/wbdu/data/UCF101_train/
 videos_folder_temporal: /home/wbdu/Tutorials/good_practice_lstm/temporal-segment-networks/data/jhmdb_flow/ #/media/SSD/wbdu/data/Penn_Action/Penn_Action_optical_flow/ #/media/SSD/wbdu/data/MPII_cooking/mpii-cooking-optical-flow/train/ # /media/SSD/wbdu/data/UCF101_flow_train_lm/ #/media/SSD/wbdu/data/UCF101_train/
 target_dir: /home/wbdu/Tutorials/good_practice_lstm/temporal-segment-networks/data/joint_positions/ #/media/SSD/wbdu/data/Penn_Action/labels/ # /media/SSD/wbdu/data/MPII_cooking/mpii-cooking/pose_train_gt_pose/ #/media/SSD/wbdu/data/MPII_cooking/mpii-cooking/pose_train_gt_pose/ #/home/wbdu/Tutorials/good_practice_lstm/temporal-segment-networks/data/joint_positions/ # target means the puppet mask
 jhmdb_splits: /home/wbdu/Tutorials/good_practice_lstm/temporal-segment-networks/data/jhmdb_splits
-video_length: /media/data/wbdu/hmdb/
+#video_length: /media/data/wbdu/hmdb/

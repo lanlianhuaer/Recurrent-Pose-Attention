@@ -1,0 +1,29 @@
+# Resume Training, start from scratch or resume training
+resume_train: True
+load_epoch: 0
+
+# Learning Parameters
+n_epochs: 60
+learning_rate: 0.1 #0.01  # def:0.01
+lr_policy: step  # def: step or auto
+lr_adapt_threshold: 0.01
+lr_step: [30] # def: 20, learning rate will be reduced by 10 times at these steps
+
+# Data
+para_load: True
+shuffle: True
+
+# Momentum
+use_momentum : True # def: True
+use_nesterov_momentum: False # def: False
+momentum: 0.9 # def: 0.9
+
+# Weight Decay
+weight_decay: 0.0005 # def: 0.0005
+
+# conv library
+lib_conv: cudnn #cudnn  # or cudaconvnet
+
+print_train_error: True
+snapshot_freq: 1  # frequency of saving weights
+print_freq: 10 #0 #0  # frequency of printing training error rate
