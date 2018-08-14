@@ -341,7 +341,7 @@ def get_target(config,target_jhmdb,param_rand,num_timesteps,num_joints):
         mirror_k_joint =[ 0,  2,  1,  4,  3,  6,  5,  8,  7, 10,  9, 12, 11]
         if flag_mirror:
             video_targets[vid_idx,:,:,:,:]=video_targets[vid_idx,:,:,::-1,:][:,:,:,mirror_k_joint]
-    video_targets =np.swapaxes(video_targets,3,2)
+    #video_targets =np.swapaxes(video_targets,3,2)
     joint_binary_mask_all =joint_binary_mask_all.reshape([target_jhmdb.shape[0]*num_timesteps,num_joints])
     video_targets =video_targets.reshape([target_jhmdb.shape[0]*num_timesteps,reg_scale_x*reg_scale_y,num_joints])
     video_targets_masked =video_targets*joint_binary_mask_all[:,None,:]
